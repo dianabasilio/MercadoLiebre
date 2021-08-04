@@ -1,0 +1,190 @@
+.search { display: inline; }
+.compra {
+     display: inline; 
+    text-align: center;
+
+        }
+.de-bloque { display: block; }
+
+body {
+    /* escribí las reglas para el body aquí */
+        background-color:#ebebeb;
+        font-family: 'Roboto', sans-serif;
+        margin: 0px;
+    
+    }
+
+header {
+    background-color: #EAC926;
+    background-size: inherit;
+    border-bottom: 10px solid #EAC926;
+    padding: 2%;
+
+}
+
+main{
+    text-align: center;
+}
+
+
+
+footer{
+    background-color: white;
+    color: #666;
+    text-align: center;
+    padding-top: 10%;
+}
+
+h2 {
+    font-size:24px;
+}
+
+.text {
+    font-size:12px;
+
+}
+
+.precio{
+    font-size:18px;
+    text-align: center;
+    text-align: left;
+    
+}
+
+.descuento{
+    font-size:16px;
+    text-align: center;
+    color: #39b54a;
+    text-align: left;
+
+}
+
+.descripcion{ 
+    display: none; 
+    font-size:16px;
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    color: #666;
+    
+}
+
+
+.lista {
+    color: black;
+}
+.burger-menu{
+    background-color:  #1259c3;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+
+}
+
+.fa-bars{
+    display: block;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 8px;
+
+}
+
+.fa, .fas{
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+
+.icon{
+    width: 2em;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+
+}
+
+.fa-gift, .fa-credit-card, .fa-user-shield{
+    display: block;
+    color: #03264C;
+    font-size: 60px;
+    text-align: center;
+    
+
+}
+
+
+.fa-search{
+    background-color:  #ebebeb;
+    width: 30px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.articulo{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 15px;
+    padding: 2%;
+    box-sizing:border-box;
+    
+    
+}
+
+.text-article{
+    border-top: solid 1px #ebebeb;
+    text-align: left;
+    padding-top: 2%;
+    box-sizing:border-box;
+
+}
+
+
+
+.fa-truck{
+    color:  #39b54a;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    border-radius:100%;
+    padding: 1%;
+    text-align: center;
+
+}
+
+
+.contenido-footer{
+    margin-bottom: 50px;
+
+}
+
+.nav-bar, .loging-bar{
+    display:none;
+}
+
+@media(min-width: 361px){
+    .descripcion{
+        display: block;  
+    }
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .nav-bar, .loging-bar{
+        display:block;
+    }
+
+    .burger-menu{
+        display:none;
+
+    }
+
+}
