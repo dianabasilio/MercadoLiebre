@@ -1,26 +1,182 @@
-.search { display: inline; }
-.compra {
-     display: inline; 
-    text-align: center;
-
-        }
-.de-bloque { display: block; }
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
 
 body {
     /* escribí las reglas para el body aquí */
         background-color:#ebebeb;
         font-family: 'Roboto', sans-serif;
-        margin: 0px;
     
     }
 
-header {
-    background-color: #EAC926;
-    background-size: inherit;
-    border-bottom: 10px solid #EAC926;
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
     padding: 2%;
+}
+.copy-header {
+    font-weight: 400;
+    text-align: center;
 
 }
+header {
+    background-color: #EAC926;
+
+}
+
+header div.logo{
+    width: 40%;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    padding-left: 2%;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+    display: block;
+}
+div.nav-bar  ul li a, div.loging-bar ul li a{
+    display:none;
+}
+
+.main-navbar a{
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    width: 40px;
+    display: block;
+}
+
+.price{
+    font-size: 18px;
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10%;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+    position: relative;
+}
+
+main section article .discount{
+    font-size:16px;
+    color: #39b54a;
+    display: flex;
+    font-weight: normal;
+    position: relative;
+    margin-top: 10%;
+    
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+    padding: 2%;
+    box-sizing: border-box;
+}
+main section article img{
+    width: 100%;
+}
+
+
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.text-article{
+    width: 100%;
+    border-top: solid 1px #ebebeb;
+    padding-top: 2%;
+    box-sizing:border-box;
+    position: relative;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
 
 main{
     text-align: center;
@@ -33,57 +189,16 @@ footer{
     color: #666;
     text-align: center;
     padding-top: 10%;
+    box-sizing: border-box;
 }
 
 h2 {
     font-size:24px;
 }
 
-.text {
-    font-size:12px;
-
-}
-
-.precio{
-    font-size:18px;
-    text-align: center;
-    text-align: left;
-    
-}
-
-.descuento{
-    font-size:16px;
-    text-align: center;
-    color: #39b54a;
-    text-align: left;
-
-}
-
-.descripcion{ 
-    display: none; 
-    font-size:16px;
-    text-align: center;
-    font-weight: bold;
-    text-align: left;
-    color: #666;
-    
-}
 
 
-.lista {
-    color: black;
-}
-.burger-menu{
-    background-color:  #1259c3;
-    width: 40px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
 
-}
 
 .fa-bars{
     display: block;
@@ -124,67 +239,125 @@ h2 {
     border: 1px solid white;
     border-radius: 5px;
     text-align: center;
-
 }
-
-.articulo{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 10px;
-    background-color: white;
-    border: 15px;
-    padding: 2%;
-    box-sizing:border-box;
-    
-    
-}
-
-.text-article{
-    border-top: solid 1px #ebebeb;
-    text-align: left;
-    padding-top: 2%;
-    box-sizing:border-box;
-
-}
-
-
 
 .fa-truck{
-    color:  #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
     width: 30px;
-    height: 20px;
+    height: 30px;
     border: 1px solid #39b54a;
-    border-radius:100%;
-    padding: 1%;
-    text-align: center;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    margin-bottom: 10%;
 
 }
 
 
 .contenido-footer{
     margin-bottom: 50px;
-
 }
 
-.nav-bar, .loging-bar{
-    display:none;
-}
+
 
 @media(min-width: 361px){
-    .descripcion{
-        display: block;  
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
     }
+    .products article {
+        width: 45%;
+    }
+
     .articulo{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    .nav-bar, .loging-bar{
+    div.nav-bar  ul li a, div.loging-bar ul li a{
         display:block;
     }
-
-    .burger-menu{
+    div.burger-menu i{
+        background-color: #0044AA;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        margin: 10px 0px 20px 0px;
+        padding: 10px;
+        width: 40px;
         display:none;
-
+    }
+    header .form{
+        display: flex;
+    }
+    header .form .input{
+        height: 25px;
     }
 
 }
+
+
+@media(min-width: 651px){
+    main section article .description{
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+@media(min-width: 769px){
+    main section div.products article {
+        width: 22%;
+    }
+
+    .top-header{
+        display:flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    
+    }
+    .main-navbar{
+        display: flex;
+        
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+}
+
+@media(min-width: 1200px){
+    .top-header, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+    .copy-header {
+        max-width: none;   
+        font-size: 18px; 
+        font-weight: 400;
+    }
+}
+
+
