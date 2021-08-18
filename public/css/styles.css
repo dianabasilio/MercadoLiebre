@@ -15,7 +15,7 @@ h3{
     font-size: 24px;
 }
 
-p{
+footer div p{
     font-size: 12px;
 }
 
@@ -59,6 +59,9 @@ header .form .input{
 }
 
 header .form .submit{
+    
+    border: none;
+    
 
     width: 10%;
 }
@@ -139,6 +142,7 @@ section.banner img{
 main{
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 main section article{
@@ -146,6 +150,14 @@ main section article{
     margin: 10px 0px;
     padding: 2%;
     box-sizing: border-box;
+    transition: box-shadow,250ms,  display, 300ms;
+    position: relative;
+    z-index: 8;
+}
+
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 main section article img{
     width: 100%;
@@ -224,12 +236,18 @@ h2 {
 
 .fa-gift, .fa-credit-card, .fa-user-shield{
     display: block;
-    color: #03264C;
+    color: #0044AA;
     font-size: 60px;
     text-align: center;
+    transition: color 600ms;
     
 
 }
+
+.fa-gift:hover,.fa-credit-card:hover, .fa-user-shield:hover {
+    color: #EAC926;
+}
+
 
 
 .fa-search{
@@ -255,13 +273,35 @@ h2 {
     right: 10px;
     top: -15px;
     margin-bottom: 10%;
+    transition: transform 1s;
 
 }
 
+
+article:hover  .fa-truck{
+    transform: rotate(-90deg);
+
+}
 
 .contenido-footer{
     margin-bottom: 50px;
 }
+
+main section article .description:hover {
+    display: block;
+   }
+
+
+article:hover  .description { display: block;
+text-align: left;
+width: 100%; }
+
+
+header .form .input{
+    border: none;
+}
+
+
 
 
 
@@ -277,9 +317,6 @@ h2 {
         width: 45%;
     }
 
-    .articulo{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
 
     div.nav-bar  ul li a, div.loging-bar ul li a{
         display:block;
@@ -302,15 +339,28 @@ h2 {
         height: 25px;
     }
 
+    .main-footer{
+        display: flex;
+    }
+
 }
 
 
-@media(min-width: 651px){
-    main section article .description{
-        width: 100%;
-        display: block;
+
+@media(min-width: 701px){
+    header .form .submit{
+    
+    height: 30px;
+    width: 30px;
+    }
+
+    header .form .input{
+        height: 50px;
+    }
+    .copyright{
         text-align: left;
     }
+
 }
 
 
@@ -340,12 +390,28 @@ h2 {
     .main-navbar li{
         margin: 0 5px;
     }
+    .top-header{
+        align-items: center;       
+    }
+    header .form .input{
+        height: 37px;
+    }
 }
 
+
+
 @media(min-width: 1200px){
+
+    
     .top-header, .main-navbar{
         max-width: 1200px;
         margin: auto;
+    }
+
+
+
+    .main-navbar a{
+        margin-top: 10px;
     }
     .main-navbar li{
         margin: 0 10px;
@@ -357,6 +423,10 @@ h2 {
         max-width: none;   
         font-size: 18px; 
         font-weight: 400;
+        margin: 0;
+    }
+    header .form .input{
+        height: 30px;
     }
 }
 

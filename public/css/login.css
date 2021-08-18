@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+
+form {
+    display: flex;
+    margin: 5% 0;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+form p, form p label{
+    margin: 10px 0;
+}
+
+#usuario, #contraseña{
+    background-color: white;
+    width: 70%;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#submit{
+    background-color: #0044AA;
+    width: 70%;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: background-color 1s;
+}
+
+#submit:hover{
+    background-color: #0022AA;
+}
