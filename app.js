@@ -12,8 +12,9 @@ app.use(express.static('public'));
 //ruta de accesso del navegador y un callback
 
 
-app.listen(3000, ()=> {
-    console.log('Server running at port 3000');
+let port = process.env.PORT || 3000;
+app.listen(port, ()=>{
+    console.log('Servidor funcionando');
 });
 
 
